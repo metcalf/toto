@@ -1,0 +1,36 @@
+config interface 'loopback'
+	option ifname 'lo'
+	option proto 'static'
+	option ipaddr '127.0.0.1'
+	option netmask '255.0.0.0'
+
+config interface 'lan'
+	option ifname 'eth0'
+	option type 'bridge'
+	option proto 'static'
+	option ipaddr '192.168.1.1'
+	option netmask '255.255.255.0'
+
+config interface 'wan'
+	option ifname 'eth1'
+	option proto 'static'
+	option ipaddr   '10.1.10.101'
+	option netmask  '255.255.255.0'
+	option gateway	'10.1.10.1'
+	option dns	'10.1.10.1'
+
+config switch
+	option name 'eth0'
+	option reset '1'
+	option enable_vlan '1'
+
+config switch_vlan
+	option device 'eth0'
+	option vlan '1'
+	option ports '0 1 2 3 4'
+
+config interface hspt
+       option proto none
+       option ifname tun0
+       option defaultroute 0
+       option peerdns 0

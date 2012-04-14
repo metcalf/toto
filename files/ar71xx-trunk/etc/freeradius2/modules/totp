@@ -1,0 +1,9 @@
+# -*- text -*-
+#
+#  $Id$
+
+# TOTP module to authenticate users based on a TOTP token
+totp {
+     backward_drift = 2
+     forward_drift = 10
+}

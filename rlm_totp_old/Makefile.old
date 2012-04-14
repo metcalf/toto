@@ -1,0 +1,13 @@
+#
+# Makefile
+#
+# Version:	$Id$
+#
+
+TARGET      = rlm_totp
+SRCS        = rlm_totp.c /usr/local/lib/liboath.a
+
+include ../rules.mak
+
+RLM_CFLAGS=-v -I/usr/src/oath-toolkit/liboath 
+#RLM_LDFLAGS=-static -L/usr/src/oath-toolkit/liboath

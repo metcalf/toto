@@ -1,0 +1,12 @@
+# -*- text -*-
+#
+#  $Id$
+
+# TOTP module
+#
+#  To authenticate requests containing a CHAP encoded TOTP Password.
+#
+totp {
+     backward_drift = 2
+     forward_drift = 10
+}

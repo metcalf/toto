@@ -1,0 +1,7 @@
+# -*- text -*-
+#
+#  $Id$
+
+# TOTP module to authenticate users based on a TOTP token
+totp {
+}
