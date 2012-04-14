@@ -1,0 +1,48 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.slo
+*.lo
+*.o
+*.so
+*.pyc
+*.pyo
+*.lai
+*.la
+*.a
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+desktop.ini
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+pip-log.txt
+
+# Dev related stuff #
+######################
+ve/
+localenv.yml
+.vagrant
+celerybeat-schedule
+*~
+\#*
+.\#*
+.svn
+.coverage
+.tox
+nosetests.xml
+*.egg
+*.egg-info
+.installed.cfg
+
