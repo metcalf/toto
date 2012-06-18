@@ -110,7 +110,7 @@ start() {
     iptables -F POSTROUTING -t nat                                                                                          
     iptables -I POSTROUTING -t nat -o $HS_WANIF -j MASQUERADE  
     ifconfig $HS_LANIF 0.0.0.0
-    /usr/sbin/chilli
+    /usr/sbin/chilli --redir --inject=test
 }
 
 stop() {
