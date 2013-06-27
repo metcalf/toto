@@ -1,4 +1,4 @@
-FreeRadius module to support authentication using a Time-base One Time Password (TOTP) as the password in a CHAP communication.  Includes proof of concept for baking this into a chillispot on OpenWRT and chef recipes for creating the OpenWRT build environment in a Vagrant virtual machine.
+FreeRADIUS module to support authentication using a Time-base One Time Password (TOTP) as the password in a CHAP communication.  Includes proof of concept for baking this into a chillispot on OpenWRT and chef recipes for creating the OpenWRT build environment in a Vagrant virtual machine.
 
 Configure command for OpenWRT build:
 
